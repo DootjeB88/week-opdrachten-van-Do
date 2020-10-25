@@ -1,0 +1,27 @@
+<script>
+    function klika(){
+        var appendata = document.getElementById("log");
+        appendata.insertAdjacentHTML("afterend","<p>u heeft op knop a geklikt</p>")
+    }
+    function klikb(){
+        var appendata = document.getElementById("log");
+        appendata.insertAdjacentHTML("afterend","<p>u heeft op knop b geklikt</p>")
+    }
+    function klikc(){
+        var appendata = document.getElementById("log");
+        appendata.insertAdjacentHTML("afterend","<p>u heeft op knop c geklikt</p>")
+    }
+    function klikd(){
+        var appendata = document.getElementById("log");
+        appendata.insertAdjacentHTML("afterend","<p>u heeft op knop d geklikt</p>")
+    }
+</script>
+
+<input type="button" id="buttona" value="a" onclick="klika()">
+<input type="button" id="buttonb" value="b" onclick="klikb()">
+<input type="button" id="buttonc" value="c" onclick="klikc()">
+<input type="button" id="buttond" value="d" onclick="klikd()">
+
+<div>
+    <p id="log"> </p>
+</div>

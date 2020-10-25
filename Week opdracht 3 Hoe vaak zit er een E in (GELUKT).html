@@ -1,0 +1,18 @@
+<script>
+    function versturen(){
+        var tellen = document.getElementById("text1").value;
+        var telling = 0;
+        var letter = document.getElementById("text2").value;
+        for (var x = 0 ; x < tellen.length ; x++)
+            if ( letter == tellen [x]){
+                telling++;
+            }
+        alert (telling);
+    }
+    
+</script>
+
+<input type="text" id="text1">
+<input type="text" id="text2">
+<input type="button" value="tel" onclick="versturen()">
+<div id="box" ></div>

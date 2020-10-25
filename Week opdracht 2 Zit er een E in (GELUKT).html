@@ -1,0 +1,15 @@
+<script>
+    function zoekf(){
+        console.log("het werkt");
+        var woord = document.getElementById("vinde").value;
+        for(    var i =  0; i < woord.length   ;    i++){
+            if( "e" == woord [i] ){
+                alert("er zit een e in");
+                
+            }
+        }
+    }
+</script>
+
+<input type="text" id="vinde">
+<input type="button" value="zoek" onclick="zoekf()">

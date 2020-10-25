@@ -1,0 +1,15 @@
+<script>
+    function welkom(){
+        var antwoord = "welkom"
+        var invoer = document.getElementById("hallo").value;
+        if("hallo"  ==  invoer){
+            alert ("welkom");
+        }
+        if("doei"   ==  invoer){
+            alert ("en tot ziens!");
+        }
+    }
+</script>
+
+<input type="text" id="hallo">
+<input type="button" value="versturen" onclick="welkom()">
