@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vier seizoenen, vier plaatjes</title>
+</head>
+
+<body>
+    
+    <img src="lente.jpg"  id="target1" width="600" n heigth="400"/>
+    <input type="button" id="verder" value="next season" onclick="nextPic()">
+
+    <script>
+    
+        var target = document.getElementById("target1");
+        var counter = 0;
+        var seasons = ["lente.jpg", "zomer.jpg", "herfst.jpg", "winter.jpg"];
+    
+        function nextPic() {
+            counter += 1;
+                if (counter > seasons.length -1){
+                    counter = 0;
+                }
+            
+            target.src = seasons[counter];
+    
+    }
+    </script>
+
+
+
+</body>
+
+</html>
